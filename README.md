@@ -2,6 +2,20 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Here is the [Deployed website](https://hardcore-fermi-9bdcc3.netlify.com/).
 
+## Group
+
+- Dennis
+- Brian
+- Chekkan
+- Braden
+
+## Dependencies
+
+- `npm`
+- `storybook`
+- `react-router`
+- `react-router-dom`
+
 ## Available Scripts
 
 In the project directory, you can run:
