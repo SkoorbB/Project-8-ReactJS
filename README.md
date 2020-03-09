@@ -16,6 +16,16 @@ Here is the [Deployed website](https://hardcore-fermi-9bdcc3.netlify.com/).
 - `react-router`
 - `react-router-dom`
 
+## Feature Branch Workflow
+
+- `Clone` repo from Brian/Braden
+- Make `seperate branch` (i.e. "Dennis Branch")
+- `Git pull` to access all branches 
+- `Git checkout <your branch>`
+- `Add` and `commit` files and content 
+- `Git push origin <your branch>`
+- New `pull request`
+
 ## Available Scripts
 
 In the project directory, you can run:
