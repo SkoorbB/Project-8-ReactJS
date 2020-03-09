@@ -6,7 +6,7 @@ Here is the [Deployed website](https://hardcore-fermi-9bdcc3.netlify.com/).
 
 - Dennis
 - Brian
-- Chekkan
+- Chakan
 - Braden
 
 ## Dependencies
