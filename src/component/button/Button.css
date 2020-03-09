@@ -1,0 +1,14 @@
+button {
+    border-radius: 2px;
+    width: 150px;
+    height: 46px;
+    cursor: pointer;
+    color: #22262A;
+    background-color: #22262A;
+    border: 1px solid #22262A;
+    z-index: 3;
+}
+
+.button-white {
+    color: white
+}
