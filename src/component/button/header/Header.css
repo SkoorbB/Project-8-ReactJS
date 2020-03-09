@@ -1,0 +1,8 @@
+header {
+    font-family: 'Dancing Script', cursive;
+    border-radius: 2px;
+    width: 150px;
+    height: 46px;
+    cursor: pointer;
+    color: red;
+}

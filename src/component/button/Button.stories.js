@@ -6,6 +6,6 @@ storiesOf('buttons', module)
 
 .add('Default', () => <Button
 label="Enter"
-type="button"
 white
+Button
 />)
