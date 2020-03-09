@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Here is the [Deployed website](https://hardcore-fermi-9bdcc3.netlify.com/).
+
 ## Available Scripts
 
 In the project directory, you can run:
