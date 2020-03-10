@@ -6,5 +6,7 @@ storiesOf('Delete', module)
 
 .add('Delete Icon', () => 
 <Delete 
+top
 base
+layout
 />) 
