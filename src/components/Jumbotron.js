@@ -9,7 +9,9 @@ const Styles = styled.div`
         background-size: cover;
         height: 500px;
         position: relative;
-        color: red;
+        font-family: 'Helvetica Neue', Helvetica;
+        color: white;
+        font-size: 30px;
     }
 
     .overlay {
