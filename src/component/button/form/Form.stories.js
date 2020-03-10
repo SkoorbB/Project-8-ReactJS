@@ -4,6 +4,10 @@ import Form from './Form';
 
 storiesOf('Form', module)
 
-.add('Form Email', () => <Form
+.add('Form User', () => <Form
 placeholder="Username"
+/>)
+
+.add('Form Pass', () => <Form
+placeholder="Password"
 />)
