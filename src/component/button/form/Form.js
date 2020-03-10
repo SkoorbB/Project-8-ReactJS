@@ -4,13 +4,13 @@ import './Form.css';
 const Form = (props) => {
     //let classList = ''
 
-return <div>
+return <form>
     <div>    
     <input /*className={classList}*/
     placeholder={props.placeholder}>
     </input>
     </div>
-    </div>
+    </form>
 }
 
 

@@ -5,7 +5,7 @@ const header = (props) => {
     let classList=''
 
     if (props.text) {
-        classList += ` header.text`
+        classList += ` header-text`
     }
 
     return <header className={classList}
