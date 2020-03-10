@@ -16,8 +16,7 @@ const Search = (props) => {
     />
     <Button
     label="Search"
-    white
-    />
+    white/>
     </div>
 }
 
