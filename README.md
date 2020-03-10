@@ -20,8 +20,8 @@ Here is the [Deployed website](https://hardcore-fermi-9bdcc3.netlify.com/).
 
 - `Clone` repo from Brian/Braden
 - Make `seperate branch` (i.e. "Dennis Branch")
-- `Git pull` to access all branches 
 - `Git checkout <your branch>`
+- `Git pull` to access all branches 
 - `Add` and `commit` files and content 
 - `Git push origin <your branch>`
 - New `pull request`
