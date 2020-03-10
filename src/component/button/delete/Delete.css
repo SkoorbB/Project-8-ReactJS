@@ -9,8 +9,8 @@
 
 .delete-layout {
     display: grid;
-    grid-template-rows: 10px 45px;
-    grid-template-columns: 1fr;
+    grid-template-rows: 10px 40px;
+    grid-template-columns: 30px;
 }
 
 .delete-top {
