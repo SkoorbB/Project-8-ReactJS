@@ -1,7 +1,7 @@
 import React from 'react';
 import './Search.css'
 import Form from '../form/Form'
-import Button from '../Button'
+import Button from '../buttons/Button'
 
 const Search = (props) => {
     let classList=''
