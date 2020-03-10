@@ -4,11 +4,13 @@ import { Home } from './Home';
 import { Movies } from './Movies';
 import { Shows } from './Shows';
 import { Layout } from './components/Layout';
+import { Jumbotron } from './components/Jumbotron';
 
 class App extends Component {
   render() {
   return (
     <React.Fragment>
+      <Jumbotron />
       <Layout>
         <Router>
           <Switch>
