@@ -14,6 +14,14 @@ const Nav = (props) => {
         <Header
         label="TrendGetters" 
         />
+        <Header
+        label="Movies"
+        type="movies"
+        />
+        <Header 
+        label="Shows"
+        type="shows"
+        />
     </nav>
     </div>
 }
