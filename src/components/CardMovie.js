@@ -38,7 +38,7 @@ class Cardmovie extends React.Component {
   render() {
     let movieList = this.state.movieData.map(item => {
       return (
-        <div className="tvshows" key={item.id}>
+        <div className="movieList" key={item.id}>
           <Card style={{ width: "18rem" }}>
             <Card.Img variant="top" src={item.image} />
             <Card.Body>
@@ -69,7 +69,7 @@ class Cardmovie extends React.Component {
         </div>
       );
     });
-    return <div className="tvContainer">{tvShows}</div>;
+    return <div className="movieContainer">{movieList}</div>;
   }
 }
 
