@@ -2,26 +2,26 @@ import React, { useState } from "react";
 // import "./tvCard.css";
 import { Card, Modal, Button } from "react-bootstrap";
 
-const urlTV = "https://group-back-end.herokuapp.com/tv";
+const urlMovie = "https://group-back-end.herokuapp.com/movie";
 
 class Cardmovie extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      tvData: []
+      movieData: []
     };
   }
 
   componentDidMount() {
-    fetch(urlTV)
+    fetch(urlMovie)
       .then(res => {
         console.log(res);
         return res.json();
       })
-      .then(tvData => {
-        console.log(tvData);
-        this.setState({ tvData: tvData });
+      .then(movieData => {
+        console.log(movieData);
+        this.setState({ movieData: movieData });
       })
       .catch(err => {
         console.error(err);
@@ -36,7 +36,7 @@ class Cardmovie extends React.Component {
   //     }
 
   render() {
-    let tvShows = this.state.tvData.map(item => {
+    let movieList = this.state.movieData.map(item => {
       return (
         <div className="tvshows" key={item.id}>
           <Card style={{ width: "18rem" }}>
