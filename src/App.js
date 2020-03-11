@@ -1,16 +1,16 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { Home } from "./Home";
+import Home from "./Home";
 import { Movies } from "./Movies";
 import { Shows } from "./Shows";
 import { Layout } from "./components/Layout";
-import { Jumbotron } from "./components/Jumbotron";
+// import { Jumbotron } from "./components/Jumbotron";
 
 class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <Jumbotron />
+        
         <Layout>
           <Router>
             <Switch>

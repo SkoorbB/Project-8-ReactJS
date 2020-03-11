@@ -5,7 +5,6 @@ import homeImage from "../assets/homeImage.jpg";
 import Button from "../component/buttons/Button";
 
 const Styles = styled.div`
-<<<<<<< HEAD
     .jumbotron {
         background: url(${homeImage}) no-repeat fixed bottom;
         background-size: cover;
@@ -16,24 +15,6 @@ const Styles = styled.div`
         font-size: 30px;
     }
 
-    .overlay {
-        opacity: 0.6;
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        z-index: -1;
-    }
-=======
-  .jumbotron {
-    background: url(${homeImage}) no-repeat fixed bottom;
-    background-size: cover;
-    height: 500px;
-    position: relative;
-    color: red;
-  }
->>>>>>> master
 
   .overlay {
     opacity: 0.6;
