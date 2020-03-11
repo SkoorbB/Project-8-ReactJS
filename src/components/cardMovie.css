@@ -1,0 +1,16 @@
+.movieContainer {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  grid-gap: 30px;
+  /* flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly; */
+}
+.movieList {
+  box-shadow: 5px 5px 5px 5px #c7c7c7;
+}
+.movieList:hover {
+  transform: scale(1.1);
+  background-color: gray;
+}
