@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-// import "./tvCard.css";
+import "./Cardtv.css";
 import { Card, Modal, Button } from "react-bootstrap";
+import Modaltv from "./Modaltv";
 
 const urlTV = "https://group-back-end.herokuapp.com/tv";
 
@@ -42,8 +43,8 @@ class Cardtv extends React.Component {
           <Card style={{ width: "18rem" }}>
             <Card.Img variant="top" src={item.image} />
             <Card.Body>
-              <Card.Title>{item.title}</Card.Title>
-
+              <Card.Title></Card.Title>
+              <Modaltv description={item.description} title={item.title} />
               {/* <Button variant="primary" onClick={this.modalTV().handleShow}>
                 Launch demo modal
               </Button>
