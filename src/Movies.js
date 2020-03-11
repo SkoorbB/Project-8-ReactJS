@@ -1,5 +1,4 @@
 import React from 'react'
-import Nav from '../src/component/nav/Nav'
 
 export const Movies = () => (
     <div>
