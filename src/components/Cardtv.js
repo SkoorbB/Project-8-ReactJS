@@ -4,7 +4,7 @@ import { Card, Modal, Button } from "react-bootstrap";
 
 const urlTV = "https://group-back-end.herokuapp.com/tv";
 
-class tvCard extends React.Component {
+class Cardtv extends React.Component {
   constructor(props) {
     super(props);
 
@@ -28,12 +28,14 @@ class tvCard extends React.Component {
       });
   }
 
+  // modalTV() {
+  //       const [show, setShow] = useState(false);
+
+  //     const handleClose = () => setShow(false);
+  //     const handleShow = () => setShow(true);
+  //     }
+
   render() {
-    const [show, setShow] = useState(false);
-
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
-
     let tvShows = this.state.tvData.map(item => {
       return (
         <div className="tvshows" key={item.id}>
@@ -42,7 +44,7 @@ class tvCard extends React.Component {
             <Card.Body>
               <Card.Title>{item.title}</Card.Title>
 
-              <Button variant="primary" onClick={handleShow}>
+              {/* <Button variant="primary" onClick={this.modalTV().handleShow}>
                 Launch demo modal
               </Button>
 
@@ -61,7 +63,7 @@ class tvCard extends React.Component {
                     Save Changes
                   </Button>
                 </Modal.Footer>
-              </Modal>
+              </Modal> */}
             </Card.Body>
           </Card>
         </div>
@@ -71,4 +73,4 @@ class tvCard extends React.Component {
   }
 }
 
-export default tvCard;
+export default Cardtv;

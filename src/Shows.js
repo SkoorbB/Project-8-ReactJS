@@ -1,10 +1,10 @@
 import React from "react";
-import tvCard from "./components/tvCard";
+import Cardtv from "./components/Cardtv";
 
-class Shows extends component {
-  render() {
-    return <tvCard />;
-  }
-}
-
-export default Shows;
+export const Shows = () => (
+  <div>
+    <h2>Just testing the shows page</h2>
+    <p>should work</p>
+    <Cardtv />
+  </div>
+);
