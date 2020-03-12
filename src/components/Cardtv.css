@@ -7,12 +7,17 @@
   justify-content: center;
   grid-template-columns: 2fr 2fr 2fr 2fr;
   grid-gap: 30px; */
+  /* max-width: 80%; */
+  background-color: black;
 }
 .tvshows {
-  box-shadow: 5px 5px 5px 5px #c7c7c7;
+  box-shadow: 5px 5px 5px 5px #5756568e;
   margin: 15px auto;
 }
 .tvshows:hover {
   transform: scale(1.1);
   background-color: rgba(248, 246, 246, 0);
+}
+.cardfooter {
+  background-color: rgb(243, 241, 241);
 }

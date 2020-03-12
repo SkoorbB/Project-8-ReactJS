@@ -33,11 +33,21 @@ class Cardtv extends React.Component {
     let tvShows = this.state.tvData.map(item => {
       return (
         <div className="tvshows" key={item.id}>
-          <Card style={{ width: "18rem" }}>
+          <Card
+            style={{
+              width: "15rem",
+              border: "none"
+            }}
+          >
             <Card.Img variant="top" src={item.image} />
-            <Card.Body>
-              {/* <Card.Title></Card.Title> */}
-              <Modaltv description={item.description} title={item.title} />
+            <Card.Body className="cardfooter">
+              <Card.Title></Card.Title>
+              <Modaltv
+                description={item.description}
+                title={item.title}
+                rating={item.rating}
+                releaseDate={item.releaseDate}
+              />
             </Card.Body>
           </Card>
         </div>
