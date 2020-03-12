@@ -41,11 +41,16 @@ class Cardmovie extends React.Component {
     let movieList = this.state.movieData.map(item => {
       return (
         <div className="movieList" key={item.id}>
-          <Card style={{ width: "18rem" }}>
+          <Card style={({ width: "18rem" }, { justifycontent: "center" })}>
             <Card.Img variant="top" src={item.image} />
             <Card.Body>
               {/* <Card.Title>{item.title}</Card.Title> */}
-              <Modalmovies description={item.description} title={item.name} />
+              <Modalmovies
+                description={item.description}
+                title={item.name}
+                rating={item.rating}
+                release={item.releaseDate}
+              />
               {/* <Button variant="primary" onClick={this.modalTV().handleShow}>
                 Launch demo modal
               </Button>
