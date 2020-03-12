@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Modal, Button } from "react-bootstrap";
-
-const urlTV = "https://group-back-end.herokuapp.com/tv";
+import "./Modaltv.css";
 
 function Modaltv(props) {
   const [show, setShow] = useState(false);
@@ -11,15 +10,40 @@ function Modaltv(props) {
   //   console.log(this.props);
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
-        Info
-      </Button>
+      <div className="buttons">
+        {/* <Button size="sm" className="modalbutton" onClick={handleShow}>
+          Info
+        </Button> */}
 
-      <Modal show={show} onHide={handleClose}>
+        <i
+          class="fas fa-question-circle"
+          onClick={handleShow}
+          style={{
+            fontSize: "30px",
+            cursor: "pointer",
+            color: "red"
+          }}
+        ></i>
+
+        <i
+          class="fas fa-plus-circle"
+          style={{
+            fontSize: "30px",
+            cursor: "pointer",
+            color: "lightblue"
+          }}
+        ></i>
+      </div>
+
+      <Modal show={show} onHide={handleClose} centered>
         <Modal.Header closeButton>
           <Modal.Title>{props.title}</Modal.Title>
         </Modal.Header>
-        <Modal.Body>{props.description}</Modal.Body>
+        <Modal.Body>
+          {props.description} <br /> <br />
+          Rating: {props.rating} <br /> <br />
+          Release Date: {props.releaseDate}
+        </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Close

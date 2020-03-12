@@ -11,13 +11,13 @@ class App extends Component {
     return (
       <React.Fragment>
         {/* <Layout> */}
-          <Router>
-            <Switch>
-              <Route exact path="/" component={Home} />
-              <Route path="/movies" component={Movies} />
-              <Route path="/shows" component={Shows} />
-            </Switch>
-          </Router>
+        <Router>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/movies" component={Movies} />
+            <Route path="/shows" component={Shows} />
+          </Switch>
+        </Router>
         {/* </Layout> */}
       </React.Fragment>
     );
