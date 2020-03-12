@@ -1,15 +1,20 @@
 import React, { useState } from "react";
-import { Modal, Button } from "react-bootstrap";
+import { Modal, Button, CardImg } from "react-bootstrap";
 import "./Modalmovies.css";
+import cardMovie from './CardMovie'
+import { CardBody } from "react-bootstrap/Card";
 
 const urlTV = "https://group-back-end.herokuapp.com/movie";
 
+let libraryData = []
+console.log(libraryData)
+
 function Modalmovies(props) {
   const [show, setShow] = useState(false);
-
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-  //   console.log(this.props);
+  const transfer = () => libraryData.push(props.title)
+   console.log(props)
   return (
     <>
       <div className="buttons">
@@ -18,7 +23,7 @@ function Modalmovies(props) {
         </Button> */}
 
         <i
-          class="fas fa-question-circle"
+          className="fas fa-question-circle"
           onClick={handleShow}
           style={{
             fontSize: "30px",
@@ -28,13 +33,16 @@ function Modalmovies(props) {
         ></i>
 
         <i
-          class="fas fa-plus-circle"
+          className="fas fa-plus-circle"
+          onClick={transfer}
+          
           style={{
             fontSize: "30px",
             cursor: "pointer",
             color: "lightblue"
           }}
         ></i>
+        
       </div>
 
       <Modal show={show} onHide={handleClose}>
