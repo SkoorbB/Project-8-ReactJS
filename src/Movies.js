@@ -1,12 +1,13 @@
 import React from "react";
 import Cardmovie from "./components/CardMovie";
-import "./App.css";
+import Nav from "./component/nav/Nav";
+
 
 export const Movies = () => (
   <div>
-    <i class="fas fa-plus"></i>
-    <h1 className="Movies">Movies</h1>
-
+    <Nav />
+    <h2>Just testing the Movies page</h2>
+    <p>hola</p>
     <Cardmovie />
   </div>
 );

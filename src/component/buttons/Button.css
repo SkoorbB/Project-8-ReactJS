@@ -1,12 +1,13 @@
 button {
     border-radius: 2px;
-    width: 80px;
+    width: 110px;
     height: 46px;
     cursor: pointer;
     color: #22262A;
-    background-color: #22262A;
+    background-color: red;
     border: 1px solid #22262A;
     z-index: 3;
+    padding-right: 10px;
 }
 
 .button-white {
