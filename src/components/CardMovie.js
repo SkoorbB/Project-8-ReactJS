@@ -29,12 +29,12 @@ class Cardmovie extends React.Component {
       });
   }
 
-  modalTV() {
-    const [show, setShow] = useState(false);
+  // modalTV() {
+  //       const [show, setShow] = useState(false);
 
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
-  }
+  //     const handleClose = () => setShow(false);
+  //     const handleShow = () => setShow(true);
+  //     }
 
   render() {
     let movieList = this.state.movieData.map(item => {
