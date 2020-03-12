@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./Home";
 import { Movies } from "./Movies";
 import { Shows } from "./Shows";
+import { Library } from "./Library"
 import { Layout } from "./components/Layout";
 // import { Jumbotron } from "./components/Jumbotron";
 
@@ -16,6 +17,7 @@ class App extends Component {
             <Route exact path="/" component={Home} />
             <Route path="/movies" component={Movies} />
             <Route path="/shows" component={Shows} />
+            <Route path="/library" component={Library} />
           </Switch>
         </Router>
         {/* </Layout> */}
