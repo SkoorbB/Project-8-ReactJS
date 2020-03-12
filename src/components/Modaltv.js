@@ -10,9 +10,30 @@ function Modaltv(props) {
   //   console.log(this.props);
   return (
     <>
-      <Button variant="primary" className="modalbutton" onClick={handleShow}>
-        Info
-      </Button>
+      <div className="buttons">
+        {/* <Button size="sm" className="modalbutton" onClick={handleShow}>
+          Info
+        </Button> */}
+
+        <i
+          class="fas fa-question-circle"
+          onClick={handleShow}
+          style={{
+            fontSize: "30px",
+            cursor: "pointer",
+            color: "red"
+          }}
+        ></i>
+
+        <i
+          class="fas fa-plus-circle"
+          style={{
+            fontSize: "30px",
+            cursor: "pointer",
+            color: "lightblue"
+          }}
+        ></i>
+      </div>
 
       <Modal show={show} onHide={handleClose} centered>
         <Modal.Header closeButton>
