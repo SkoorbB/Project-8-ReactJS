@@ -41,7 +41,9 @@ export const Jumbotron = () => (
         <Link to="/Shows">
         <Button label="Shows" white />
         </Link>
+        <Link to="/Library">
         <Button label="Library" white />
+        </Link>
       </Container>
     </Jumbo>
   </Styles>
