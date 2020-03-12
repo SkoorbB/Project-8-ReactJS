@@ -3,6 +3,7 @@ import { Jumbotron as Jumbo, Container } from "react-bootstrap";
 import styled from "styled-components";
 import homeImage from "../assets/homeImage.jpg";
 import Button from "../component/buttons/Button";
+import  { Link } from 'react-router-dom';
 
 const Styles = styled.div`
     .jumbotron {
@@ -34,7 +35,13 @@ export const Jumbotron = () => (
       <Container>
         <h1>Welcome To TrendGetters</h1>
         <p>Come in and see which shows and movies are trending</p>
-        <Button label="Enter" white />
+        <Link to="/Movies">
+        <Button label="Movies" white />
+        </Link>
+        <Link to="/Shows">
+        <Button label="Shows" white />
+        </Link>
+        <Button label="Library" white />
       </Container>
     </Jumbo>
   </Styles>

@@ -11,7 +11,7 @@ class App extends Component {
     return (
       <React.Fragment>
         
-        <Layout>
+        {/* <Layout> */}
           <Router>
             <Switch>
               <Route exact path="/" component={Home} />
@@ -19,7 +19,7 @@ class App extends Component {
               <Route path="/shows" component={Shows} />
             </Switch>
           </Router>
-        </Layout>
+        {/* </Layout> */}
       </React.Fragment>
     );
   }
