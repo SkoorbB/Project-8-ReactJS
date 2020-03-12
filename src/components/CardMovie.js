@@ -2,6 +2,7 @@ import React, { useState } from "react";
 // import "./tvCard.css";
 import { Card, Modal, Button } from "react-bootstrap";
 import "./cardMovie.css";
+import Modalmovies from "./Modalmovies";
 
 const urlMovie = "https://group-back-end.herokuapp.com/movie";
 
@@ -29,12 +30,12 @@ class Cardmovie extends React.Component {
       });
   }
 
-  modalTV() {
-    const [show, setShow] = useState(false);
+  // modalTV() {
+  //       const [show, setShow] = useState(false);
 
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
-  }
+  //     const handleClose = () => setShow(false);
+  //     const handleShow = () => setShow(true);
+  //     }
 
   render() {
     let movieList = this.state.movieData.map(item => {
@@ -44,7 +45,7 @@ class Cardmovie extends React.Component {
             <Card.Img variant="top" src={item.image} />
             <Card.Body>
               {/* <Card.Title>{item.title}</Card.Title> */}
-
+              <Modalmovies description={item.description} title={item.name} />
               {/* <Button variant="primary" onClick={this.modalTV().handleShow}>
                 Launch demo modal
               </Button>
