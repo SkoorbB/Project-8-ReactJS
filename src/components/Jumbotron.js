@@ -5,13 +5,16 @@ import homeImage from "../assets/homeImage.jpg";
 import Button from "../component/buttons/Button";
 
 const Styles = styled.div`
-  .jumbotron {
-    background: url(${homeImage}) no-repeat fixed bottom;
-    background-size: cover;
-    height: 500px;
-    position: relative;
-    color: red;
-  }
+    .jumbotron {
+        background: url(${homeImage}) no-repeat fixed bottom;
+        background-size: cover;
+        height: 500px;
+        position: relative;
+        font-family: 'Helvetica Neue', Helvetica;
+        color: white;
+        font-size: 30px;
+    }
+
 
   .overlay {
     opacity: 0.6;
