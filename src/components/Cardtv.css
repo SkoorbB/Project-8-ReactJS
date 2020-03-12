@@ -3,4 +3,16 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  /* display: grid;
+  justify-content: center;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  grid-gap: 30px; */
+}
+.tvshows {
+  box-shadow: 5px 5px 5px 5px #c7c7c7;
+  margin: 15px auto;
+}
+.tvshows:hover {
+  transform: scale(1.1);
+  background-color: rgba(248, 246, 246, 0);
 }
