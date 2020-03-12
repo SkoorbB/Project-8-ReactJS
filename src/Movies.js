@@ -6,8 +6,8 @@ import Nav from "./component/nav/Nav";
 export const Movies = () => (
   <div>
     <Nav />
-    <h2>Just testing the Movies page</h2>
-    <p>hola</p>
+    
+    
     <Cardmovie />
   </div>
 );
