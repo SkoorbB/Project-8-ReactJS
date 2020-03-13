@@ -7,10 +7,12 @@ import  { Link } from 'react-router-dom';
 
 const Styles = styled.div`
     .jumbotron {
-        background: url(${homeImage}) no-repeat fixed bottom rgba(0, 151, 19, 0.7);
+        background: url(${homeImage}) no-repeat fixed bottom;
+        background: rgba(255,255,255,0.5)
         background-size: cover;
         height: 100vh;
         position: relative;
+        
         
       
      
@@ -28,18 +30,19 @@ const Styles = styled.div`
   }
 
   h1 {
-      font-size: 30px;
+      font-size: 40px;
       color: white;
       font-family: Helvetica;
   }
 
   p {
-    font-size: 20px;
+    font-size: 30px;
     color: white;
     font-family: Helvetica;
   }
   .info {
       text-align: center;
+      padding-top: 100px;
   } 
 `;
 
