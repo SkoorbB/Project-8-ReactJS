@@ -3,66 +3,70 @@ import { Jumbotron as Jumbo, Container } from "react-bootstrap";
 import styled from "styled-components";
 import homeImage from "../assets/homeImage.jpg";
 import Button from "../component/buttons/Button";
-import  { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const Styles = styled.div`
-    .jumbotron {
-        background: url(${homeImage}) no-repeat bottom rgba(0,0,0,.8);
-    
-        background-size: cover;
-        height: 100vh;
-        position: relative;
-        
-        
-      
-     
-    }
+  .jumbotron {
+    background: url(${homeImage}) no-repeat bottom rgba(0, 0, 0, 0.8);
 
-
-  .overlay {
-    opacity: 0.6;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
+    background-size: cover;
+    height: 100vh;
   }
-
-  h1 {
-      font-size: 40px;
-      color: white;
-      font-family: Helvetica;
+  * {
+    margin: 0;
+    padding: 0;
   }
-
   p {
-    font-size: 30px;
-    color: white;
-    font-family: Helvetica;
+    font-size: 20px;
+    padding-top: 20px;
   }
   .info {
-      text-align: center;
-      padding-top: 100px;
-  } 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: "Secular One", sans-serif;
+    font-size: 40px;
+    color: white;
+    padding-top: 100px;
+  }
+  .buttContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 150px;
+    font-family: "Secular One", sans-serif;
+  }
 `;
 
 export const Jumbotron = () => (
   <Styles>
     <Jumbo fluid className="jumbo">
-      <div className="overlay"></div>
-      <Container className= "info">
-        <h1>Welcome To TrendGetters</h1>
-        <p>Come in and see which shows and movies are trending</p>
+      {/* <div className="overlay"></div> */}
+      <div className="info">
+        <h1>TRENDFLIX</h1>
+        <p>
+          See which shows and movies are trending, then make your list to watch
+          later!
+        </p>
+      </div>
+      <div className="buttContainer">
         <Link to="/Movies">
-        <Button label="Movies" white />
+          <Button label="Movies" white />
         </Link>
+        <br />
+
+        <br />
         <Link to="/Shows">
-        <Button label="Shows" white />
+          <Button label="Shows" white />
         </Link>
+        <br />
+
+        <br />
         <Link to="/Library">
-        <Button label="Library" white />
+          <Button label="Library" white />
         </Link>
-      </Container>
+      </div>
     </Jumbo>
   </Styles>
 );

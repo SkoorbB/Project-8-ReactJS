@@ -1,20 +1,20 @@
 import React, { useState } from "react";
 import { Modal, Button, CardImg } from "react-bootstrap";
 import "./Modalmovies.css";
-import cardMovie from './CardMovie'
+import cardMovie from "./CardMovie";
 import { CardBody } from "react-bootstrap/Card";
 
 const urlTV = "https://group-back-end.herokuapp.com/movie";
 
-let libraryData = []
-console.log(libraryData)
+let libraryData = [];
+console.log(libraryData);
 
 function Modalmovies(props) {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-  const transfer = () => libraryData.push(props.title)
-   console.log(props)
+  const myList = () => libraryData.push(props.title);
+  console.log(props);
   return (
     <>
       <div className="buttons">
@@ -34,27 +34,28 @@ function Modalmovies(props) {
 
         <i
           className="fas fa-plus-circle"
-          onClick={transfer}
-          
+          onClick={myList}
           style={{
             fontSize: "30px",
             cursor: "pointer",
             color: "lightblue"
           }}
         ></i>
-        
       </div>
 
-      <Modal show={show} onHide={handleClose}>
-        <Modal.Header closeButton>
-          <Modal.Title>{props.title}</Modal.Title>
+      <Modal show={show} onHide={handleClose} centered className="modal">
+        <Modal.Header
+          closeButton
+          style={{ backgroundColor: "black", color: "white" }}
+        >
+          <Modal.Title className="modalhead">{props.title}</Modal.Title>
         </Modal.Header>
-        <Modal.Body>
+        <Modal.Body style={{ backgroundColor: "black", color: "white" }}>
           {props.description} <br /> <br />
           Rating: {props.rating} <br /> <br />
           Release Date: {props.releaseDate}
         </Modal.Body>
-        <Modal.Footer>
+        <Modal.Footer style={{ backgroundColor: "black", color: "white" }}>
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
