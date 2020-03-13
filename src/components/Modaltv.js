@@ -40,7 +40,7 @@ function Modaltv(props) {
           closeButton
           style={{ backgroundColor: "black", color: "white" }}
         >
-          <Modal.Title>{props.title}</Modal.Title>
+          <Modal.Title className="modalhead">{props.title}</Modal.Title>
         </Modal.Header>
         <Modal.Body style={{ backgroundColor: "black", color: "white" }}>
           {props.description} <br /> <br />
