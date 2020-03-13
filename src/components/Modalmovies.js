@@ -43,16 +43,19 @@ function Modalmovies(props) {
         ></i>
       </div>
 
-      <Modal show={show} onHide={handleClose}>
-        <Modal.Header closeButton>
+      <Modal show={show} onHide={handleClose} centered className="modal">
+        <Modal.Header
+          closeButton
+          style={{ backgroundColor: "black", color: "white" }}
+        >
           <Modal.Title>{props.title}</Modal.Title>
         </Modal.Header>
-        <Modal.Body>
+        <Modal.Body style={{ backgroundColor: "black", color: "white" }}>
           {props.description} <br /> <br />
           Rating: {props.rating} <br /> <br />
           Release Date: {props.releaseDate}
         </Modal.Body>
-        <Modal.Footer>
+        <Modal.Footer style={{ backgroundColor: "black", color: "white" }}>
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
