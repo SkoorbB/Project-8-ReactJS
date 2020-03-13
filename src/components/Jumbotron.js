@@ -8,12 +8,14 @@ import  { Link } from 'react-router-dom';
 const Styles = styled.div`
     .jumbotron {
         background: url(${homeImage}) no-repeat fixed bottom;
+        background: rgba(255,255,255,0.5)
         background-size: cover;
-        height: 500px;
+        height: 100vh;
         position: relative;
-        font-family: 'Helvetica Neue', Helvetica;
-        color: white;
-        font-size: 30px;
+        
+        
+      
+     
     }
 
 
@@ -26,13 +28,29 @@ const Styles = styled.div`
     right: 0;
     z-index: -1;
   }
+
+  h1 {
+      font-size: 40px;
+      color: white;
+      font-family: Helvetica;
+  }
+
+  p {
+    font-size: 30px;
+    color: white;
+    font-family: Helvetica;
+  }
+  .info {
+      text-align: center;
+      padding-top: 100px;
+  } 
 `;
 
 export const Jumbotron = () => (
   <Styles>
     <Jumbo fluid className="jumbo">
       <div className="overlay"></div>
-      <Container>
+      <Container className= "info">
         <h1>Welcome To TrendGetters</h1>
         <p>Come in and see which shows and movies are trending</p>
         <Link to="/Movies">
