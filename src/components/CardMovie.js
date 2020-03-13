@@ -49,7 +49,7 @@ class Cardmovie extends React.Component {
                 description={item.description}
                 title={item.name}
                 rating={item.rating}
-                release={item.releaseDate}
+                releaseDate={item.releaseDate}
               />
             </Card.Body>
           </Card>
