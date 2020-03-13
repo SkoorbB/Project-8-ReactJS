@@ -7,8 +7,8 @@ import  { Link } from 'react-router-dom';
 
 const Styles = styled.div`
     .jumbotron {
-        background: url(${homeImage}) no-repeat fixed bottom;
-        background: rgba(255,255,255,0.5)
+        background: url(${homeImage}) no-repeat bottom rgba(0,0,0,.8);
+    
         background-size: cover;
         height: 100vh;
         position: relative;
