@@ -1,13 +1,14 @@
 import React from "react";
 import Cardmovie from "./components/CardMovie";
-import Nav from "./component/nav/Nav";
+// import Nav from "./component/nav/Nav";
+import Tav from "./components/Tav";
 
 
 export const Movies = () => (
   <div>
-    <Nav />
-    <h2>Just testing the Movies page</h2>
-    <p>hola</p>
+    <Tav />
+    
+    
     <Cardmovie />
   </div>
 );

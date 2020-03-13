@@ -10,8 +10,8 @@ class Home extends Component {
     
         <div class="Home">
         <Jumbotron />
-        <h2>Just testing the homepage</h2>
-        <p>should work</p>
+    
+        
     </div>
     );
 }
